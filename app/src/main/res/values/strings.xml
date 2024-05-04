@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="nav_open">Nav Open</string>
+    <string name="nav_close">Nav Close</string>
+    <string name="dialog_positive_button">Okay, Do it </string>
+    <string name="dialog_negative_button">No </string>
+    
+    <string name="author_name"> Mohammad Saikat Islam </string>
+    <string name="author_desc">
+        This app is a practice project of learning android development.
+        \nMade using Java programming language with XML. 
+        \nBugs and Errors are so common, though making it one hundred percent bug free was a focus point.
+        \nAny Suggetions and feedback will be welcomed -
+        \nEmail: saikatislam709@gmail.com
+    </string>
+    
+</resources>

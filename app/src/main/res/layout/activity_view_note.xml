@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="start"
+         android:layout_margin="10dp"
+         android:orientation="vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="7dp"
+             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+             android:id="@+id/title"
+             android:text="Title" />
+
+        <ScrollView
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:scrollbarSize="0dp"
+             android:layout_width="match_parent">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                 android:textSize="20sp"
+                 android:id="@+id/content"
+                 android:text="Content" />
+
+        </ScrollView>
+
+        <LinearLayout
+             android:layout_height="55dp"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_marginHorizontal="1dp"
+                 android:src="@drawable/lightbulb" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_weight="1"
+                 android:textSize="16sp"
+                 android:id="@+id/reminderDate"
+                 android:text="No Reminder Set" />
+
+        </LinearLayout>
+        
+        <View
+             android:layout_height="1dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="5dp"
+             android:background="?attr/colorOnSurface" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:textSize="12sp"
+             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+             android:id="@+id/editedOn"
+             android:text="No Modification" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

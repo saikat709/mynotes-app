@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/lightbulb"
+        android:title="Notes"
+        android:name="Notes" />
+    
+    <item
+        android:id="@+id/archieved"
+        android:icon="@drawable/archive"
+        android:title="Archieved"
+        android:name="Archieved" />
+    
+    <item
+        android:id="@+id/trashed"
+        android:icon="@drawable/delete"
+        android:title="Trashed"
+        android:name="Trashed" />
+    
+    <item
+        android:id="@+id/settings"
+        android:enabled="false"
+        android:icon="@drawable/lightbulb"
+        android:title="Settings"
+        android:name="Settings" />
+    
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/check"
+        android:title="About"
+        android:name="About" />
+
+</menu>

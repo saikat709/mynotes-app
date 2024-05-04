@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="start"
+         android:layout_margin="10dp"
+         android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="Title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:inputType="text"
+                 android:imeOptions="actionNext"
+                 android:id="@+id/title" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="0dp"
+             android:layout_width="match_parent"
+             android:hint="Content"
+             android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:gravity="top"
+                 android:id="@+id/content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+             android:id="@+id/addReminderLayout"
+             android:layout_height="65dp"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/lightbulb" />
+
+            <TextView
+                 android:id="@+id/reminderDate"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="5dp"
+                 android:text="Set a reminder" />
+            
+            <com.google.android.material.button.MaterialButton
+                 android:id="@+id/addReminderButton"
+                 app:icon="@drawable/add"
+                 style="@style/Widget.MaterialComponents.Button.Icon"
+                 android:layout_height="wrap_content"
+                 android:layout_width="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/relativeLayout">
+
+    <androidx.recyclerview.widget.RecyclerView
+         android:layout_height="match_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentTop="true"
+         android:layout_width="match_parent"
+         android:id="@+id/recyclerView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/floatingActionButton"
+         android:layout_height="wrap_content"
+         android:layout_margin="20dp"
+         android:src="@drawable/add"
+         android:layout_marginBottom="30dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_width="wrap_content" />
+    
+    <TextView
+         android:id="@+id/emptyIndicator"
+         android:visibility="gone"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:textSize="35sp"
+         android:text="Empty" />
+
+</RelativeLayout>
