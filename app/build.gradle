@@ -19,11 +19,22 @@ android {
             useSupportLibrary true
         }
     }
+    
+    signingConfigs {
+        release {
+            storeFile file("signing-key.jks")
+
+            storePassword "mynotes1234"
+
+            keyAlias "myNotesAlias"
+
+            keyPassword "mynotes1234"
+        }
+    }
 
     buildTypes {
         release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
